@@ -1,0 +1,17 @@
+{
+  "appName": {
+    "message": "HostsExt"
+  },
+  "appDescription": {
+    "message": "Lightweight extension to easily manage your hosts file in browser"
+  },
+  "appTooltip": {
+    "message": "HostsExt"
+  },
+  "addToPocket": {
+    "message": "Add to hosts"
+  },
+  "removeFromPocket": {
+    "message": "Remove from hosts"
+  }
+}
