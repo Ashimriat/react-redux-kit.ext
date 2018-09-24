@@ -22,7 +22,12 @@
   "rules": {
     "indent": [
       "error",
-      4
+      2,
+      {
+        "ignoredNodes": [
+          "JSXElement"
+        ]
+      }
     ],
     "linebreak-style": [
       "error",
