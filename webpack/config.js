@@ -2,13 +2,14 @@ const path = require('path');
 const webpack = require('webpack');
 const DedupCSSPlugin = require('dedupcss-webpack-plugin');
 const Analyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const ChromeExtensionReloader = require('webpack-chrome-extension-reloader');
 
 module.exports = {
   entry: {
     background: './src/background/index.js',
     content: './src/content/index.jsx',
-    popup: './src/popup/index.js',
-    options: './src/options/index.js',
+    popup: './src/popup/index.jsx',
+    options: './src/options/index.jsx',
   },
   devtool: 'source-map',
   output: {
@@ -45,7 +46,7 @@ module.exports = {
       path.join(__dirname, 'src'),
       'node_modules',
     ],
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -57,5 +58,12 @@ module.exports = {
     new webpack.optimize.AggressiveMergingPlugin(),
     process.env.ANALYZE ? new Analyzer() : () => {
     },
+    new ChromeExtensionReloader({
+      reloadPage: true,
+      entries: {
+        contentScript: 'content',
+        background: 'background',
+      },
+    }),
   ],
 };

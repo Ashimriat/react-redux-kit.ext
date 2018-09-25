@@ -6,10 +6,10 @@ import { example1, example2 } from '../actions';
 
 
 const example = createReducer({
-    [example1]: (state: number, payload: number): number => payload + state,
-    [example2]: (): number => 0,
+  [example1]: (state: number, payload: number): number => payload + state,
+  [example2]: (): number => 0,
 }, 0);
 
 export default combineReducers({
-    example,
+  example,
 });

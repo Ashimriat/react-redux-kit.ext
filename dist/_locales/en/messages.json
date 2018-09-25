@@ -1,17 +1,11 @@
 {
   "appName": {
-    "message": "HostsExt"
+    "message": "redux-react-ext-kit"
   },
   "appDescription": {
-    "message": "Lightweight extension to easily manage your hosts file in browser"
+    "message": "dev"
   },
   "appTooltip": {
-    "message": "HostsExt"
-  },
-  "addToPocket": {
-    "message": "Add to hosts"
-  },
-  "removeFromPocket": {
-    "message": "Remove from hosts"
+    "message": "redux-react-ext-kit"
   }
 }
