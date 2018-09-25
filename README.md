@@ -1,4 +1,4 @@
-> **🚧 Please note**: This is a work in progress and can be unstable in priduction
+> **🚧 Please note**: This is a work in progress and can be unstable in production
 
 # React-Redux-ext-kit
 
