@@ -6,10 +6,10 @@ const ChromeExtensionReloader = require('webpack-chrome-extension-reloader');
 
 module.exports = {
   entry: {
-    background: './src/background/index.js',
+    // background: './src/background/index.js',
     content: './src/content/index.jsx',
-    popup: './src/popup/index.jsx',
-    options: './src/options/index.jsx',
+    // popup: './src/popup/index.jsx',
+    // options: './src/options/index.jsx',
   },
   devtool: 'source-map',
   output: {
@@ -62,7 +62,6 @@ module.exports = {
       reloadPage: true,
       entries: {
         contentScript: 'content',
-        background: 'background',
       },
     }),
   ],

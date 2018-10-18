@@ -25,16 +25,6 @@
     "default_title": "__MSG_appTooltip__",
     "default_popup": "popup.html"
   },
-  "options_ui": {
-    "chrome_style": false,
-    "page": "options.html"
-  },
-  "background": {
-    "scripts": [
-      "scripts/background.bundle.js"
-    ],
-    "persistent": true
-  },
   "content_scripts": [
     {
       "matches": [

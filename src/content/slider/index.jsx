@@ -3,28 +3,25 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-
+import type { MerchantType } from '../../types';
 
 type PropsType = {
-  example: number
+  merchant: MerchantType
 };
 
 function Slider(props: PropsType): React.ComponentType {
-  const { example } = props;
+  const { merchant, user } = props;
 
   return (
     <Paper>
-      <Typography variant="caption">
-        {`Example value: ${example}`}
-      </Typography>
+      {JSON.stringify(user)}
     </Paper>
   );
 }
 
 function mapStateToProps(state: Object): Object {
   return {
-    example: state.example,
+    user: state.user,
   };
 }
 
