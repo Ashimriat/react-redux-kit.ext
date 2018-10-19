@@ -27,7 +27,5 @@ export default () => {
     } else {
       store.dispatch(logout());
     }
-  } else {
-    store.dispatch(logout());
   }
 };
