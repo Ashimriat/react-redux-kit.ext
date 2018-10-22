@@ -3,6 +3,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+import ShadowDOM from 'react-shadow';
 
 import theme from '../../theme';
 import Slider from '../slider';
@@ -27,7 +28,7 @@ export default (store: Object) => {
         }}
       >
         <MuiThemeProvider theme={theme}>
-          <Slider merchant={TEST_MERCHANT} />
+          <Slider merchant={TEST_MERCHANT}/>
         </MuiThemeProvider>
       </div>
     </Provider>, root,

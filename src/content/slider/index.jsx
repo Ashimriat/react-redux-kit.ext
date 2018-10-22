@@ -30,14 +30,20 @@ function Slider(props: PropsType): React.ComponentType {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       color="primary"
     >
       <Toolbar
         className={classes.root}
         variant="dense"
       >
-        <Grid container>
+        <Grid
+          container
+          style={{
+            position: 'fixed64',
+            top: '0',
+          }}
+        >
           <Grid
             item
             className={classes.logo}
